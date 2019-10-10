@@ -46,7 +46,7 @@ Also you should install `flask, flask_table and flask-mysql` use command
 
     `mysql -h <rds_accesspoint> -P 3306 -u<username> -p < database/user.sql`
 
-4. `At the very end of the main.py file comment app.run() and uncomment app.run(host="0.0.0.0", port=80)`
+4. At the very end of the `main.py` file `comment app.run() and uncomment app.run(host="0.0.0.0", port=80)`
 
 5. execute `python3 main.py`
 

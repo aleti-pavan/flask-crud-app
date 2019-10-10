@@ -1,23 +1,27 @@
 # flask-crud-app
 This Repo contains simple flask CRUD operations with mysql
 
-##Dependencies
+## Dependencies
+
+
 
 You should have mysql installed on the localhost in order to test this app ( you can also have it installed on remote and should be updated db_config.py)
 
-Also you should install `flask, flask_table and flask-mysql` use commands `pip3 install flask , pip3 install flask_table , pip3 install flask-mysql`
+Also you should install `flask, flask_table and flask-mysql` use command
+
+    `sudo pip3 install flask flask_table flask-mysql`
+
+__If you are running on the local system__
+
+`Dependencies should be installed`
 
 1. `git clone https://github.com/aleti-pavan/flask-crud-app.git`
 
 2. `cd flask-crud-app\`
 
-3. Create `appdb` and `user_table` for the app. You can either create it manually or choose to use created sql file
+3. Create `appdb` and `user_table` for the app. You can either create it manually or choose to use created sql file with following command.
 
      `mysql -uroot < database/user.sql`
-
-    __if you are using rds use following command__
-
-     `mysql -h <rds_accesspoint> -P 3306 -u<username> -p < database/user.sql`
 
 
 4. If you are using Mac/Linux use `export FLASK_APP=main.py` , if you are using windows `set FLASK_APP=main.py`
@@ -25,3 +29,24 @@ Also you should install `flask, flask_table and flask-mysql` use commands `pip3 
 5. execute `flask run`
 
 6. curl http://localhost:5000 or you can locate the url into the browser. You should now be able to perform CREATE, READ, UPDATE AND DELETE (CRUD) on the app.
+
+
+__If you are running on server with remote database like rds use following commands__ (Tested on ubuntu 18.04)
+
+
+
+`Dependencies should be installed`
+
+1. 1. `git clone https://github.com/aleti-pavan/flask-crud-app.git`
+
+2. `cd flask-crud-app\`
+
+3. Create `appdb` and `user_table` for the app. You can either create it manually or choose to use created sql file with following command
+
+ `mysql -h <rds_accesspoint> -P 3306 -u<username> -p < database/user.sql`
+
+4. `At the very end of the __main.py__ file comment app.run() and uncomment app.run(host="0.0.0.0", port=80)`
+
+5. execute `python3 main.py`
+
+6. Put the insance ip on to the browser.

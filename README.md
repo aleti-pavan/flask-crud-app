@@ -59,4 +59,8 @@ Also you should install `flask, flask_table and flask-mysql` use command
 
 6. Put the insance ip on to the browser.
 
+
+# App looks similar to below image
+
+
 ![alt text](./images/app.png)

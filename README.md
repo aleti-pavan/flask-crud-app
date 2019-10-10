@@ -38,6 +38,12 @@ Also you should install `flask, flask_table and flask-mysql` use command
 
 `Dependencies should be installed`
 
+```   sudo pip3 install flask flask_table flask-mysql
+      sudo su
+      apt-get update
+      apt install git python3-pip mysql-client-core-5.7 -y
+```
+
 1. `git clone https://github.com/aleti-pavan/flask-crud-app.git`
 
 2. `cd flask-crud-app\`

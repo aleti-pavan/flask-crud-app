@@ -13,6 +13,7 @@ Also you should install `flask, flask_table and flask-mysql` use commands `pip3 
 
 3. Create `appdb` and `user_table` for the app. You can either create it manually or choose to use created sql file
   `mysql -uroot < database/user.sql`
+
   __if you are using rds use following command__
 
   `mysql -h <rds_accesspoint> -P 3306 -u<username> -p < database/user.sql`

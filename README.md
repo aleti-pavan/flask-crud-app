@@ -38,13 +38,13 @@ Also you should install `flask, flask_table and flask-mysql` use command
 
 `Dependencies should be installed`
 
-1. 1. `git clone https://github.com/aleti-pavan/flask-crud-app.git`
+1. `git clone https://github.com/aleti-pavan/flask-crud-app.git`
 
 2. `cd flask-crud-app\`
 
 3. Create `appdb` and `user_table` for the app. You can either create it manually or choose to use created sql file with following command
 
- `mysql -h <rds_accesspoint> -P 3306 -u<username> -p < database/user.sql`
+    `mysql -h <rds_accesspoint> -P 3306 -u<username> -p < database/user.sql`
 
 4. `At the very end of the main.py file comment app.run() and uncomment app.run(host="0.0.0.0", port=80)`
 

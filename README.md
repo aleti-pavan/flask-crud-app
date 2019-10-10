@@ -53,11 +53,13 @@ Also you should install `flask, flask_table and flask-mysql` use command
 
     `mysql -h <rds_accesspoint> -P 3306 -u<username> -p < database/user.sql`
 
-4. At the very end of the `main.py` file `comment app.run() and uncomment app.run(host="0.0.0.0", port=80)`
+4. Update the db_config.py with necessary values `username, host, password` to have the app connected to remote DB.
 
-5. execute `python3 main.py`
+5. At the very end of the `main.py` file `comment app.run() and uncomment app.run(host="0.0.0.0", port=80)`
 
-6. Put the insance ip on to the browser.
+6. execute `python3 main.py`
+
+7. Put the insance ip on to the browser.
 
 
 # App looks similar to below image

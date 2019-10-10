@@ -11,7 +11,8 @@ Also you should install `flask, flask_table and flask-mysql` use command
 
     `sudo pip3 install flask flask_table flask-mysql`
 
-__If you are running on the local system__
+
+# If you are running on the local system
 
 `Dependencies should be installed`
 
@@ -31,8 +32,8 @@ __If you are running on the local system__
 6. curl http://localhost:5000 or you can locate the url into the browser. You should now be able to perform CREATE, READ, UPDATE AND DELETE (CRUD) on the app.
 
 
-__If you are running on server with remote database like rds use following commands__ (Tested on ubuntu 18.04)
 
+# If you are running on server with remote database like rds use following commands (Tested on ubuntu 18.04)
 
 
 `Dependencies should be installed`
@@ -45,7 +46,7 @@ __If you are running on server with remote database like rds use following comma
 
  `mysql -h <rds_accesspoint> -P 3306 -u<username> -p < database/user.sql`
 
-4. `At the very end of the __main.py__ file comment app.run() and uncomment app.run(host="0.0.0.0", port=80)`
+4. `At the very end of the main.py file comment app.run() and uncomment app.run(host="0.0.0.0", port=80)`
 
 5. execute `python3 main.py`
 
